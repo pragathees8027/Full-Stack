@@ -1,0 +1,7 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+  "rootDir": "./ts",                                  /* Specify the root folder within your source files. */
+  "outDir": "./src/js"                                /* Specify an output folder for all emitted files. */
+  }
+}
