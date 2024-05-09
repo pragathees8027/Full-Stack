@@ -1,4 +1,4 @@
-type Post = {
+type Post = {  // type alias 
     id: number;
     title: string;
     content: string;
@@ -6,7 +6,7 @@ type Post = {
     date: Date;
   }
 
-interface Blog {
+interface Blog {  //interface
     id:number;
     posts: Post[];
     addPost(post: Post): void;
