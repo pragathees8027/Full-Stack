@@ -11,6 +11,8 @@ function Cart({qty, userName}) {
         { name: 'Moondrop Aria SE', quantity: qty[5], unitPrice: 7599 },
       ];
 
+      let [showAlert, setShowAlert] = useState(false);
+
       let totAmount = 0, totProducts = 0;
       orders.forEach(order => {
             totAmount += (order.quantity * order.unitPrice);
@@ -40,8 +42,15 @@ function Cart({qty, userName}) {
             </div>
             <h1 className='total'>Products: <span>{totProducts}</span></h1>
             <h1 className='total'> Cost: <span className='money'>₹</span><span>{totAmount}</span></h1>
+            <button className="placeOrder" onClick={() => setShowAlert(true)}>Confirm orders</button>
         </div>
     </div>
+    {showAlert && (
+            <div className="alert">
+                Your orders have been placed
+                <button className="close-btn" onClick={() => {setShowAlert(false); window.location.reload();}}>Close</button>
+            </div>
+    )}
     </>
     );
     }
