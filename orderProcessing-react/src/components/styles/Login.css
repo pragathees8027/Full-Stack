@@ -68,13 +68,13 @@
     width: calc(100% - 0.6em);
   }
   
-  .enter .icon svg {
+  .enter .icon img {
     width: 1.1em;
     transition: transform 0.3s;
-    color: white;
+    z-index: 99999;
   }
   
-  .enter:hover .icon svg {
+  .enter:hover .icon img {
     transform: translateX(0.1em);
   }
   
@@ -86,7 +86,8 @@
     width: 250px;
     height: 6vh;
     font-size: 2rem;
-    color: #c84747;
+    /* color: #c84747; */
+    color: white;
     text-align: center;
     background: #00000000;
     border: none;

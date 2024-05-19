@@ -13,7 +13,6 @@ export default function Login({ onLogin }) {
     const handleSubmit = () => {
         if (userName.trim() === "") {
             setShowAlert(true);
-            // alert("Please enter your username.");
             return;
         }
         onLogin(userName);
@@ -27,7 +26,7 @@ export default function Login({ onLogin }) {
                 <span id="hello">Hello there, </span>
                 <input type="text" placeholder="Name" id="userName" name="userName" required value={userName} onChange={handleInputChange}></input>
             </div>
-            <button type="submit" className="enter" onClick={handleSubmit} id='submit'>
+            <button type="submit" className="enter" onClick={handleSubmit} id='submit' autoComplete="off">
                 <span id="greet">Welcome</span>
                 <div class="icon"><img src={arrow}/></div>
             </button>
