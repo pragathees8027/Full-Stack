@@ -17,6 +17,8 @@ function AddOrders({userName, onSave}) {
     let [value5, setValue5] = useState(0);
     let [value6, setValue6] = useState(0);
 
+    let [showAlert, setShowAlert] = useState(false);
+
     const handleInputChange = (index, newValue) => {
         let values = [value1, value2, value3, value4, value5, value6];
         let updatedValues = [...values];
@@ -49,7 +51,11 @@ function AddOrders({userName, onSave}) {
 
 
     let handleSave = () => {
-        onSave([value1, value2, value3, value4, value5, value6]);
+        if (totProducts === 0) {
+            setShowAlert(true);
+        } else {
+            onSave([value1, value2, value3, value4, value5, value6]);
+        }
     };
     
 
@@ -100,6 +106,12 @@ function AddOrders({userName, onSave}) {
         </div>
     </div>
     </div>
+    {showAlert && (
+            <div className="alert">
+                Cart is empty
+                <button className="close-btn" onClick={() => setShowAlert(false)}>Close</button>
+            </div>
+    )}
     </>
     );
     }

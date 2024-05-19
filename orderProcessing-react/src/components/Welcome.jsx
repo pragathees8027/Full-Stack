@@ -9,9 +9,7 @@ function Welcome({ onClick }) {
         <div className="welcome">
         <h1>Order Processing</h1>
         <p>Add & view ordes</p>
-        <span id="arrow">
-                <img src={arrow} />
-        </span>
+            <button id="arrow"><img src={arrow} /></button>   
         </div>
     </div>
     </>

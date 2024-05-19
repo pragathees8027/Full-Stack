@@ -45,13 +45,14 @@
 
   .enter span {
     width: 100%;
-    margin-left: 10%;
+    margin-left: 25%;
     text-align: center;
   }
   
   .enter .icon {
     background: white;
-    margin-left: 1em;
+    top: 5px;
+    left: 5px;
     position: absolute;
     display: flex;
     align-items: center;
@@ -68,19 +69,18 @@
     width: calc(100% - 0.6em);
   }
   
-  .enter .icon img {
+  /* .enter .icon img {
     width: 1.1em;
     transition: transform 0.3s;
-    z-index: 99999;
-  }
+  } */
   
-  .enter:hover .icon img {
-    transform: translateX(0.1em);
-  }
+  /* .enter:hover .icon img {
+    transform: translate(0.1em);
+  } */
   
-  .enter:active .icon {
+  /* .enter:active .icon {
     transform: scale(0.95);
-  }
+  } */
 
   input {
     width: 250px;
