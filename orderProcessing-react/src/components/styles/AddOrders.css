@@ -23,7 +23,7 @@
     width: 550px;
     height: 350px;
     border-radius: 4px;
-    background: #000000bf;
+    /* background: #000000bf; */
     color: white;
     border: 1px solid #ffffff30;
     box-shadow: 8px 12px 150px 5px black;
@@ -42,6 +42,7 @@
     background: transparent;
     border: 1px solid #ff5a91;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -57,19 +58,52 @@
     transform: rotate(-90deg);
     transition: all .5s;
     text-transform: uppercase;
-    color: #ff568e;
+    color: white;
     letter-spacing: .1em;
   }
   
   .card p:hover span {
+    color: #ff568e;
     transform: rotate(0);
   }
 
+  .card p img {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    display: none;
+  }
+
+  .card p input {
+    height: 40px;
+    width: 150px;
+    padding-left: 25px;
+    padding-right: 20px;
+    background: white;
+    color: black;
+    border-radius: 2rem;
+    display: none;
+  }
+
+  .card p:hover img {
+    margin-top: -5%;
+    display: block;
+  }
+  .card p:hover img {
+    margin-top: -5%;
+    display: block;
+  }
+
+  .card p:hover input {
+    margin-top: 5%;
+    display: block;
+  }
+
   .button {
-    --width: 100px;
+    --width: 120px;
     --height: 35px;
     --tooltip-height: 35px;
-    --tooltip-width: 90px;
+    --tooltip-width: 150px;
     --gap-between-tooltip-to-button: 18px;
     --button-color: #ff5a91;
     --tooltip-color: #ff5a91;
@@ -78,8 +112,7 @@
     background: var(--button-color);
     position: relative;
     text-align: center;
-    border-radius: 0.45em;
-    font-family: "Arial";
+    border-radius: 2em;
     transition: background 0.3s;
   }
   
