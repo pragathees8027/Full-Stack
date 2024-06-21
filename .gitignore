@@ -2,3 +2,4 @@
 shop/.vscode
 bus/.vscode
 *.js
+**/node_modules/

@@ -1,0 +1,74 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc((100% - 3* 20vw))/3 - 1px;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5vh;
+}
+
+.book {
+  background: #82b6d4cc;
+  width: 25vw;
+  padding: 4vh 2vw;
+  margin: 4vh 2vw;
+  border-radius: 2rem;
+}
+
+.book h2 {
+  color: black;
+}
+
+.cart {
+  background: #6888cf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2vh;
+  width: 80vw;
+  padding: 4vh 2vw;
+  margin: 4vh 2vw;
+  border-radius: 2rem;
+}
+
+.cart h2 {
+  color: black;
+}
+
+.cart p {
+  width: 10vw;
+  padding: 2vh 4vw;
+  background: teal;
+}
+
+.cart ul {
+  list-style-type: none;
+}
+
+.cart ul li {
+  margin: 2vh 4vw;
+}
+
+.cart ul li button{
+  margin: 0 4vw;
+}
+
+.total {
+  border-radius: 2rem;
+}
+
+.add {
+  background: green;
+}
+
+.del {
+  background: red;
+}
