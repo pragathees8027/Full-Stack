@@ -1,0 +1,33 @@
+body {
+  color: black;
+}
+
+div {
+  width: 60vw;
+  height:fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div .header {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div .footer {
+  flex-direction: row;
+  gap: 5vw;
+}
+
+button {
+  height: 30px;
+  width: fit-content;
+}
+
+input {
+  color: black;
+  width: 40vw;
+  height: 35px;
+}

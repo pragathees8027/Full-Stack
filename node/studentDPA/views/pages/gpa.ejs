@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Result</title>
+</head>
+<style>
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+</style>
+
+<body>
+    <div>
+        <h2>GPA Data</h2>
+	    <p>Rollno : <%= rollno %></p>
+        <p>GPA : <%= gpa %></p>
+        <h2>Marks</h2>
+        <p><%= subjects.sub1 %> : <%= marks.sub1 %></p>
+        <p><%= subjects.sub2 %> : <%= marks.sub2 %></p>
+        <p><%= subjects.sub3 %> : <%= marks.sub3 %></p>
+    </div>
+</body>
+
+</html>

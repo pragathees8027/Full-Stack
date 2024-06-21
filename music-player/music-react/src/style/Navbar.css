@@ -1,0 +1,38 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 5vh;
+    background-color: #333;
+  }
+  
+  ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: inline; 
+    margin-right: 20px;
+  }
+  
+  a {
+    color: white; 
+    text-decoration: none;
+    transition: all 0.1s linear;
+  }
+  
+  a:hover {
+    background-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+
+  .active {
+    background-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  
