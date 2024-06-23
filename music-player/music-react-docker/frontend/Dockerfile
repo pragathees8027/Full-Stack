@@ -1,4 +1,4 @@
-FROM node:lts AS build
+FROM node:lts-alpine
 WORKDIR /frontend
 COPY package.json package-lock.json ./
 RUN npm install

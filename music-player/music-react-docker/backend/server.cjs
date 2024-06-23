@@ -10,9 +10,7 @@ let app = express();
 app.use(cors());
 let PORT = 3001;
 
-const mongoURI = process.env.MONGO_URI;
-
-mongoose.connect(mongoURI, {
+mongoose.connect("mongodb://localhost:27017/music_player", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

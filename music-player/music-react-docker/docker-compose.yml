@@ -13,20 +13,4 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3001:3001"
-    environment:
-      MONGO_URI: mongodb://localhost:27017/container
-    depends_on:
-      - mongo
     network_mode: "host"
-
-  mongo:
-    image: mongo
-    container_name: mongodb
-    ports:
-      - "27017:27017"
-    volumes:
-      - mongodb_data:/data/db
-    network_mode: "host"
-
-volumes:
-  mongodb_data:
